@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Professional Website - Inspired by Unseen Studio</title>
+   <!-- Font Awesome for icons -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" integrity="sha512-LZWMEruOEG1ni1CjwJuM2AmH9yk8xIsc+BTg3U2ixSEeZVoXKGf02EtNDm4U2qFkCK+aXVDzKbK2LF/ijf//ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Google Font -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <!-- Custom Styles -->
+   <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+   <header class="sticky-header">
+     <div class="logo">MySite</div>
+     <nav>
+       <ul>
+         <li><a href="#hero">Home</a></li>
+         <li><a href="#features">Features</a></li>
+         <li><a href="#portfolio">Portfolio</a></li>
+         <li><a href="#subscribe">Subscribe</a></li>
+         <li><a href="#payment">Payment</a></li>
+         <li><a href="#contact">Contact</a></li>
+       </ul>
+     </nav>
+     <div class="search-bar">
+       <input type="text" id="searchInput" placeholder="Search portfolio..." onkeyup="searchItems()" />
+     </div>
+   </header>
+   <main>
+     <section id="hero">
+       <h1>Welcome to Our Creative Space</h1>
+       <p>Experience a modern digital journey inspired by Unseen Studio's artistic aesthetics.</p>
+       <a href="#features" class="cta-button">Explore Features</a>
+     </section>
+     <section id="features">
+       <h2>Our Features</h2>
+       <div class="feature-grid">
+         <div class="feature">
+           <i class="fa-solid fa-magnifying-glass"></i>
+           <h3>Sticky Search Bar</h3>
+           <p>Quickly find portfolio items with a stylish search bar that stays in place as you scroll.</p>
+         </div>
+         <div class="feature">
+           <i class="fa-solid fa-envelope-open-text"></i>
+           <h3>Opt-In Form</h3>
+           <p>Stay connected! Join our mailing list and receive updates on new projects and events.</p>
+         </div>
+         <div class="feature">
+           <i class="fa-solid fa-share-nodes"></i>
+           <h3>Social Media Icons</h3>
+           <p>Connect with us on your favorite platforms through our accessible social links.</p>
+         </div>
+         <div class="feature">
+           <i class="fa-solid fa-credit-card"></i>
+           <h3>Payment Integration</h3>
+           <p>Support our work via our secure payment gateway and help us create more amazing content.</p>
+         </div>
+       </div>
+     </section>
+     <section id="portfolio">
+       <h2>Portfolio</h2>
+       <p>Browse our selected projects. Use the search bar to filter by name.</p>
+       <div class="portfolio-grid" id="portfolioGrid">
+         <div class="portfolio-item" data-title="Digital Branding">
+           <div class="portfolio-image"><i class="fa-solid fa-image"></i></div>
+           <h4>Digital Branding</h4>
+           <p>Modern digital branding with pastel aesthetics.</p>
+         </div>
+         <div class="portfolio-item" data-title="Motion Design">
+           <div class="portfolio-image"><i class="fa-solid fa-image"></i></div>
+           <h4>Motion Design</h4>
+           <p>Dynamic motion graphics that capture attention.</p>
+         </div>
+         <div class="portfolio-item" data-title="Web Development">
+           <div class="portfolio-image"><i class="fa-solid fa-image"></i></div>
+           <h4>Web Development</h4>
+           <p>Responsive and interactive websites for all devices.</p>
+         </div>
+         <div class="portfolio-item" data-title="Illustration">
+           <div class="portfolio-image"><i class="fa-solid fa-image"></i></div>
+           <h4>Illustration</h4>
+           <p>Vivid and engaging illustrations for your brand.</p>
+         </div>
+       </div>
+     </section>
+     <section id="subscribe">
+       <h2>Subscribe to Our Newsletter</h2>
+       <form id="subscribeForm">
+         <input type="email" id="emailInput" placeholder="Enter your email" required />
+         <button type="submit">Subscribe</button>
+       </form>
+       <p id="subscribeMessage"></p>
+     </section>
+     <section id="payment">
+       <h2>Support Our Work</h2>
+       <p>We appreciate your support! Click the button below to proceed to payment.</p>
+       <button id="payButton">Pay Now</button>
+     </section>
+     <section id="contact">
+       <h2>Contact Us</h2>
+       <p>Have questions or want to collaborate? Reach out via the form below.</p>
+       <form id="contactForm">
+         <input type="text" id="nameInput" placeholder="Your Name" required />
+         <input type="email" id="contactEmailInput" placeholder="Your Email" required />
+         <textarea id="messageInput" placeholder="Your Message" required></textarea>
+         <button type="submit">Send Message</button>
+       </form>
+       <p id="contactMessage"></p>
+     </section>
+   </main>
+   <footer>
+     <div class="social-icons">
+       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+       <a href="#"><i class="fa-brands fa-twitter"></i></a>
+       <a href="#"><i class="fa-brands fa-instagram"></i></a>
+       <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+     </div>
+     <p>&copy; 2025 MySite. All rights reserved.</p>
+   </footer>
+   <!-- Custom Script -->
+   <script src="script.js"></script>
+ </body>
+ </html>
